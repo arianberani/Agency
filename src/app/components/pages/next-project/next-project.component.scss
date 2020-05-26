@@ -1,0 +1,125 @@
+.next-project{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  background-color: white;
+margin-top: 305px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.some-page-wrapper-next-project {
+  padding-left: 80px;
+}
+.row-next-project {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column-project {
+ display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.column-2-project{
+  padding-top: 40px;
+}
+.h3-title-project{
+  font-size: 21px;
+  width: 206px;
+  font-weight: bold;
+}
+p.p-next-project {
+  font-size: 18px;
+  padding-top: 15px;
+  width: 321px;
+}
+button.button-download {
+  width: 163.71px;
+  height: 52.39px;
+  border: none;
+  background-color: #27debf;;
+  color: white;
+}
+.button-next-project {
+  padding-top: 36px;
+}
+
+
+img{
+  &.img-next-project-circle {
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -65px;
+    z-index: 2;
+  }
+
+  &.img-next-project-circle-2 {
+    position: absolute;
+    z-index: 0;
+    margin-right: -7px;
+    margin-top: -7px;
+    right: 105px;
+  }
+
+  &.img-next-project{
+    z-index: 1;
+    position: absolute;
+
+  }
+}
+
+
+
+.p-about{
+  position: relative;
+  font-size: 8px;
+  color: #27DEBF;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: rgba(15, 191, 97, .1);
+    bottom: -1px;
+    left: 8px;
+  }
+}
+@media (max-width: 991.98px) {
+  img.img-next-project{
+    position: unset;
+  }
+  img.img-next-project-circle-2{
+    display: none;
+  }
+  .next-project-column {
+     justify-content: center;
+     display: grid;
+     }
+  .next-project{
+    margin-top: 150px;
+  }
+}
+:after{
+  display: none;
+}
+@media (max-width: 500.98px) {
+  img.img-next-project{
+    width: 200px;
+    height: auto;
+  }
+  .some-page-wrapper-next-project{
+    padding-left: 40px;
+
+  }
+  p.p-next-project{
+    width: 100%;
+  }
+  img.img-next-project-circle{
+    width: 115px;
+  }
+}

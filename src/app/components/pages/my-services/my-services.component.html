@@ -1,0 +1,104 @@
+<div class="my-services">
+  <div class="container">
+    <div class="title-services">
+    <h4 class="h4-services">My SERVICES</h4>
+    <h2 class="h2-services-our">Our Provided Features & Expertise</h2>
+  </div>
+
+           <div class='some-page-wrapper-services'>
+          <div class='row-my-services'>
+     <div class='column-my-services '  *ngFor="let items of servicesbox ">
+              <div class='web-design-column shadow-column'>
+                <div class="img-design">
+                  <img class=" img-web" src="assets/images/Ellipse web.png" alt="" />
+                  <img class=" img-web-1" src="assets/images/web-design.png" alt="" />
+                  <h2 class="title-web-design">{{items.title}}</h2>
+                  <span>- - -</span>
+                  <p class="p-web-design"> {{items.text}}</p>
+                  <div class="button-my-services">
+                    <button class="button-know-more">Know More -></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        <div class='column-my-services' *ngFor="let items of servicesbox ">
+          <div class='web-design-column-2 shadow-column design-space'>
+            <p class="number-web number-95">{{items.number}}</p>
+            <div class="progress">
+              <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h3 class="web-design-title-2">{{items.sectitle}}</h3>
+            <h5 class="h5-design">HTML, CSS, jQuery</h5>
+          </div>
+        </div>
+
+   </div>
+    <div class='some-page-wrapper-services'>
+      <div class='row-my-services'>
+
+        <div class='column-my-services  '>
+          <div class='web-design-column-2 shadow-column column-space'>
+            <p class="number-web">85%</p>
+            <div class="progress">
+              <div class="progress-bar w-85" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h3 class="web-design-title-2">Graphic Design</h3>
+            <h5 class="h5-design">Photoshop, Illustrator</h5>
+          </div>
+        </div>
+        <div class='column-my-services graphics-designn '>
+          <div class='web-design-column shadow-column column-green'>
+            <div class="img-design">
+              <img class=" img-web " src="assets/images/Ellipse graphics.png" alt="" />
+              <img class=" img-web-1 img-web-2" src="assets/images/graphics-img.png" alt="" />
+              <h2 class="title-web-design color-title-graphics">Graphics Designn</h2>
+              <span>- - -</span>
+              <p class="p-web-design font-line"> Lorem ipsum dolor sit amet,Stet clita kasd lorem ipsum dolor sit amet. sed diam  eirmod tempor dolore.</p>
+              <div class="button-my-services">
+                <button class="button-know-more color-button">Know More -></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class='some-page-wrapper-services'>
+      <div class='row-my-services'>
+
+
+        <div class='column-my-services'>
+          <div class='web-design-column shadow-column web-development'>
+            <div class="img-design">
+              <img class=" img-web" src="assets/images/Ellipse web.png" alt="" />
+              <img class=" img-web-1" src="assets/images/Developement.png" alt="" />
+              <h2 class="title-web-design">Web Developement</h2>
+              <span>- - -</span>
+              <p class="p-web-design developement-p"> Lorem ipsum dolor sit amet,Stet clita kasd lorem ipsum dolor sit amet. sed diam  eirmod tempor dolore.</p>
+              <div class=" developement-button">
+                <button class="button-know-more">Know More -></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='column-my-services'>
+          <div class='web-design-column-2  shadow-column developement-postion column-space'>
+            <img class=" img-development" src="assets/images/Group-development.png" alt="" />
+            <p class="number-web">70%</p>
+            <div class="progress">
+              <div class="progress-bar w-70" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <h3 class="web-design-title-2">Web Development</h3>
+            <h5 class="h5-design">HTML, CSS, jQuery</h5>
+          </div>
+        </div>
+          </div>
+        </div>
+      </div>
+    <div class=" view-more-button">
+      <button class="button-more">View More</button>
+    </div>
+  </div>
+</div>

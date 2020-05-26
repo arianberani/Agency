@@ -1,0 +1,165 @@
+.send-message {
+  padding-top: 195px;
+  background: url("../../../../assets/images/map.png") no-repeat;
+  background-position: center !important;
+  background-position: top !important;
+}
+.container-send-message{
+  max-width: 900px;
+  margin: auto;
+}
+.h2-send-message{
+  position: relative;
+  font-size: 28px;
+  font-weight: 600;
+  padding-top: 18px;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 223px;
+    height: 18px;
+    border-radius: 10px;
+    background-color: rgba(15, 191, 97, 0.1);
+    bottom: -4px;
+    left: 334px;
+  }
+}
+.h4-contact{
+  position: relative;
+  color: #27DEBF;
+  font-size: 13px;
+  font-weight: 600;
+  &::after{
+    content: "";
+    position: absolute;
+    width: 83px;
+    height: 9px;
+    border-radius: 10px;
+    background-color: rgba(15, 191, 97, 0.1);
+    bottom: -3px;
+    left: 404px;
+  }
+}
+.title-send-message{
+  text-align: center;
+  padding-bottom: 32px;
+}
+.form-row > .col, .form-row > [class*="col-"] {
+  margin: 20px 12px;
+}
+.form-control{
+  height: 64px;
+  font-size: 13px;
+  color: #151D41;
+  border: 1px solid #151D41;
+}
+textarea.form-control {
+  height: 146px !important;
+  margin-top: 20px;
+}
+.form-row {
+
+  margin-right: -15px;
+  margin-left: -15px;
+}
+::placeholder {
+  color: #151D41;
+}
+button.send-message-button {
+  width: 213px;
+  height: 57px;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #27DEBF;
+  border: none;
+  border-radius: 5px;
+}
+.button-send {
+  text-align: center;
+  padding-top: 40px;
+}
+/*.images-send-message {
+
+  margin-top: -200px;
+  margin-left: -57px;
+}*/
+textarea#exampleFormControlTextarea1 {
+  resize: none;
+}
+img.img-message-up {
+  right: 0;
+  position: absolute;
+  margin-right: 300px;
+  margin-top: -25px;
+}
+@media (max-width: 575.98px) {
+  .form-row{
+    flex-direction: column;
+
+  }
+
+}
+@media (max-width: 891.98px) {
+  .form-row{
+    margin: 0px 18px !important;
+  }
+  .col{
+    margin: 0;
+  }
+  .form-group{
+    margin: 0px 32px;
+  }
+
+}
+@media (max-width: 1024.98px) {
+  .send-message{
+    padding: 0;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  img.img-message-send {
+    width: 94px;
+  }
+  img.img-message-up{
+    margin-right: 36px;
+  }
+}
+@media (max-width: 1199.98px) {
+  img.img-message-send{
+    display: none;
+  }
+  .images-send-message{
+    margin: 0;
+  }
+}
+
+@media (max-width: 768.98px) {
+      .send-message {
+    padding-top: 0;
+  }
+  .h4-contact{
+    padding-top: 20px;
+  }
+
+}
+
+@media (max-width: 414.98px) {
+  .form-group {
+    margin: 0px 24px;
+  }
+}
+@media (max-width: 500.98px){
+
+  img.img-message-up {
+    right: 16px;
+    width: 9%;
+    margin-top: 20px;
+    height: auto;
+  }
+  .col {
+    margin: 10px 0px !important;
+  }
+
+}

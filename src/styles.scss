@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+//body {
+// margin: 0;
+//  padding: 0;
+//  background-image: url("/assets/images/Path 1.svg");
+//  background-repeat: no-repeat;
+////  background-position: right;
+//  background-size: 1200px;
+//}
+@media (max-width: 991.98px) {
+  :after{
+    display: none;
+  }
+}
+
+.container{
+  overflow: hidden;
+}

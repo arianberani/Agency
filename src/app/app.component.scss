@@ -1,0 +1,12 @@
+img.img-message-up {
+  position: fixed;
+  bottom: 30px;
+  right: 100px;
+  cursor: pointer;
+}
+@media (max-width: 891.98px) {
+  img.img-message-up {
+    right: 0px;
+    z-index: 10;
+  }
+}

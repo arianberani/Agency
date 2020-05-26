@@ -1,0 +1,46 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+  background: linear-gradient(to top right, #ccd6da 0%, #cec1d4 100%);
+  padding: 20px 20px;
+}
+.input-register{
+  height: 40px;
+  padding-left: 10px;
+  background: #ecebeb;
+  border: none;
+}
+.log-in {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(to top right, #08aeea 40%, #b721ff 70%);
+  justify-content: center;
+  align-items: center;
+}
+button.cancelbtn {
+  width: 100px;
+  height: 40px;
+  border: none;
+  margin: 10px 20px;
+  background: linear-gradient(to top right, #08aeea 0%, #b721ff 50%);
+}
+button.signupbtn {
+  width: 100px;
+  height: 40px;
+  background: linear-gradient(to top right, #08aeea 0%, #b721ff 100%);
+  border: none;
+}
+.register.sign-up-color {
+  background-color: bisque;
+  margin-top: 40px;
+}
+input#psw {
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .register{
+    width: 100%;
+  }
+}

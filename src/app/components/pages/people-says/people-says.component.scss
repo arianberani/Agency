@@ -1,0 +1,123 @@
+.people-says{
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 100px;
+  background: url("../../../../assets/images/Group 338.png") ;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+
+}
+
+.title-people{
+  text-align: center;
+}
+.h2-people-say{
+  position: relative;
+  padding-top: 8px;
+  font-size: 40px;
+  font-weight: 600;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 297px;
+    height: 26px;
+    border-radius: 10px;
+    background-color: rgba(15, 191, 97, .1);
+    bottom: 2px;
+    left: 400px;
+  }
+}
+.h4-people-say{
+  position: relative;
+  color: #27DEBF;
+  font-size: 20px;
+  font-weight: 600;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 146px;
+    height: 13px;
+    border-radius: 10px;
+    background-color: rgba(15, 191, 97, .1);
+    bottom: -2px;
+    left: 500px;
+  }
+}
+p.p-says {
+  margin: auto;
+  font-size: 16px;
+  font-weight: 600;
+  width: 670px;
+  line-height: 26px;
+  color: #151d41;
+}
+h3.h3-names {
+  font-size: 30px;
+  font-weight: 600;
+  color: #151D41;
+  padding-top: 36px;
+}
+h6.ceo {
+  font-size: 16px;
+  color: #151D41;
+  padding-top: 10px;
+}
+#dot-green-active {
+  background-color: #27DEBF;
+}
+
+.dot {
+  height: 7px;
+  margin: 5px;
+  width: 7px;
+  background-color: #2a3b40;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+.slide-dot{
+  padding-top: 18px;
+  padding-bottom: 2px;
+}
+img.img-people-says.people-3 {
+  margin-left: -15px;
+  position: relative;
+  z-index: -1;
+}
+.people-1{
+  margin-right: -15px;
+
+}
+.images-people{
+  cursor: pointer;
+}
+.images-marks {
+
+  margin-top: -84px;
+}
+
+@media (max-width: 575.98px) {
+  .people-says {
+  padding: 50px;
+  }
+
+}
+
+@media (max-width: 916.98px) {
+  p.p-says{
+    width: 100%;
+
+  }
+}
+@media (max-width: 1024px) {
+  .h4-people-say {
+    &::after {
+      left: 330px;
+    }
+  }
+  .h2-people-say {
+    &::after {
+      left: 250px;
+    }
+  }
+}

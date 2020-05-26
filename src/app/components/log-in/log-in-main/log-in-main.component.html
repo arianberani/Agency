@@ -1,0 +1,36 @@
+<div class="log-in">
+  <div class="container">
+    <div class="register sign-up-color">
+      <h1>Log In</h1>
+      <hr>
+    </div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="register">
+       <label for="email"><b>Email</b></label>
+        <input type="text" formControlName="email"  class="input-register" placeholder="Enter Email" id="email" name="email" [ngClass]="{'is-invalid':loginForm.get('email').touched && loginForm.get('email').invalid}">
+      <div *ngIf="loginForm?.get('email')?.touched && loginForm?.get('email')?.invalid"  class="invalid-feedback">Email is required</div>
+      <div *ngIf="loginForm?.get('email')?.touched && loginForm?.get('email')?.invalid"  class="invalid-feedback"></div>
+      <div *ngIf="loginForm?.get('email')?.errors?.required">Email Name is required</div>
+      <div *ngIf="loginForm?.get('email')?.errors?.email">Email must be a valid email Address</div>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" formControlName="password" class="input-register" placeholder="Enter Password" id="psw" name="psw" [ngClass]="{'is-invalid':loginForm.get('password').touched && loginForm.get('password').invalid}">
+        <div *ngIf="loginForm?.get('password')?.touched && loginForm?.get('password')?.invalid"  class="invalid-feedback">
+          <div *ngIf="loginForm?.get('password')?.errors?.required">Password is required</div>
+          <div *ngIf="loginForm?.get('password')?.errors?.minlength">Password  must be a letaset 6 charector</div>
+
+        </div>
+    <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+        <div class="clearfix">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <button type="submit" class="signupbtn">Log In</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

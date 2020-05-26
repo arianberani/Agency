@@ -1,0 +1,49 @@
+
+<div class="sing-up">
+        <div class="container">
+          <div class="row">
+            <div class="col-10">
+              <div class="jumbotron">
+                <h2>Angular 6 Reactive Form validation</h2>
+
+                <form name="form" [formGroup]="singupform" (ngSubmit)="singupform.valid && onSubmit()">
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text"  class="form-control" formControlName="firstName" id="firstName" [ngClass]="{'is-invalid':singupform.get('firstName').touched && singupform.get('firstName').invalid}" required />
+                    <div class="invalid-feedback">
+                      <div>First Name is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" class="form-control" formControlName="lastName" id="lastName" [ngClass]="{'is-invalid':singupform.get('lastName').touched && singupform.get('lastName').invalid}" required />
+                    <div class="invalid-feedback">
+                      <div>Last Name is required</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" formControlName="email" id="email" [ngClass]="{'is-invalid':singupform.get('email').touched && singupform.get('email').invalid}"   />
+                    <div *ngIf="singupform.get('email').touched && singupform.get('email').invalid"  class="invalid-feedback">
+                      <div *ngIf="singupform.get('email').errors.required">Email Name is required</div>
+                      <div *ngIf="singupform.get('email').errors.email">Email must be a valid email Address</div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control"  formControlName="password" id="password" [ngClass]="{'is-invalid':singupform.get('password').touched && singupform.get('password').invalid}" />
+                    <div *ngIf="singupform.get('password').touched && singupform.get('password').invalid"  class="invalid-feedback">
+                      <div *ngIf="singupform.get('password').errors.required">Password is required</div>
+                      <div *ngIf="singupform.get('password').errors.minlength">Password  must be a letaset 6 charector</div>
+                    </div>
+
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-primary"  [disabled]="!singupform.valid">Register</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

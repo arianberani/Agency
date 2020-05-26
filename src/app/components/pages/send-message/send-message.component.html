@@ -1,0 +1,41 @@
+<div class="send-message">
+  <div class="container-send-message">
+    <div class="title-send-message">
+      <h4 class="h4-contact">CONTACT ME </h4>
+      <h2 class="h2-send-message">Send Us a Message</h2>
+    </div>
+    <form [formGroup]="formGroup" (ngSubmit)="onSendMessage()">
+    <div class="form-row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Name" formControlName="name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Email" formControlName="email">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Phone#" formControlName="phone">
+      </div>
+      <div class="col">
+        <select class="col form-control form-control-sm" formControlName="selection">
+          <option>Budget</option>
+          <option>Small select</option>
+          <option>Small select</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"
+                  formControlName="message"></textarea>
+    </div>
+    <div class="button-send">
+      <button  type="submit" class="send-message-button"> Send Message</button>
+    </div>
+  </form>
+  </div>
+  <div class="images-send-message">
+    <img class=" img-message-send " src="assets/images/send messaage.png" alt=""/>
+  </div>
+
+</div>
